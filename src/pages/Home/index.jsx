@@ -1,5 +1,11 @@
+import Banner from '../../compoments/Banner'
+import Listelogement from '../../compoments/Listelogement'
+
 function Home() {
-    return <main>Page d'accueil 🏡</main>
+    return  <main>
+              <Banner />
+              <Listelogement />
+            </main>
   }
   
   export default Home

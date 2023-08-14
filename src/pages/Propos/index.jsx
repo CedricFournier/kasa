@@ -1,5 +1,9 @@
+import Banner from '../../compoments/Banner'
+
 function Propos() {
-    return <div>A propos</div>
-  }
+  return  <main>
+            <Banner />
+          </main>
+}
   
   export default Propos

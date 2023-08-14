@@ -1,0 +1,9 @@
+.sectionitemlog {
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 50px 60px;
+    & article {
+        height: 340px;
+        background-color: aqua;
+    }
+}
