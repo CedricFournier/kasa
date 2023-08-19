@@ -8,7 +8,7 @@ function Propos() {
             <Banner imgsrc={imgmontagne} altbanner="Paysage de montagne"/>
             <section>
             {tabapropos.map((propos, index) => (
-              <Collapse key={index} titre={propos.title} content={propos.content} />
+              <Collapse key={index} titre={propos.title} content={<p>{propos.content}</p>} />
             ))}
             </section>
           </main>

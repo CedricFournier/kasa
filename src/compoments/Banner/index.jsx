@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 function Banner(props) {
     
     return (
@@ -8,12 +6,6 @@ function Banner(props) {
                 <h1>{props.titreh1}</h1>
             </div>
     )
-  }
-  
-  Banner.propTypes = {
-    imgsrc: PropTypes.string,
-    altbanner: PropTypes.string,
-    titreh1: PropTypes.string,
 }
 
 export default Banner

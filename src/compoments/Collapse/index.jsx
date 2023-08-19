@@ -16,7 +16,7 @@ function Collapse(props) {
                 </button>
             </div>
             {open && (<div className='toggle'>
-                <p>{props.content}</p>
+                {props.content}
             </div>
             )}    
         </article>

@@ -5,6 +5,7 @@ import Logement from './pages/Logement';
 import Propos from './pages/Propos';
 import Header from './compoments/Header';
 import Footer from './compoments/Footer';
+import Error from './pages/Error';
 
 function App(){
     return (
@@ -14,6 +15,7 @@ function App(){
                 <Route path="/" element={<Home />} />
                 <Route path="/Logement/:id" element={<Logement />} />
                 <Route path="Propos" element={<Propos />} />
+                <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
         </Router>
