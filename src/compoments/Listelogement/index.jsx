@@ -8,7 +8,12 @@ function Listelogement() {
         <section className='sectionitemlog'>
             {tablogement.map((logement) => (
                 <article key={logement.id}>
-                    <Link to={`/Logement/${logement.id}`}>{logement.title}</Link>
+                    <Link to={`/Logement/${logement.id}`}>
+                        <h2>{logement.title}</h2>
+                        <div>
+                            <img src={logement.cover} alt={logement.title} />
+                        </div>
+                    </Link>
                 </article>
             ))}
         </section>

@@ -6,7 +6,7 @@ import tabapropos from '../../datas/data_apropos.json'
 function Propos() {
   return  <main>
             <Banner imgsrc={imgmontagne} altbanner="Paysage de montagne"/>
-            <section>
+            <section className='collapsepropos'>
             {tabapropos.map((propos, index) => (
               <Collapse key={index} titre={propos.title} content={<p>{propos.content}</p>} />
             ))}

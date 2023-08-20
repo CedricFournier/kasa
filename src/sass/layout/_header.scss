@@ -2,13 +2,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    max-width: 1240px;
     height: 68px;
     margin: 45px auto 50px auto;
     & img {
         height: 68px;
         width: 210px;
     }
+    & a {
+        font-size: 24px;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .linkpropos {

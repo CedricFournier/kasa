@@ -1,9 +1,38 @@
+.collapsepropos {
+    display: flex;
+    flex-direction: column;
+    max-width: 1023px;
+    gap: 30px;
+    margin: 38px auto 38px auto;
+}
 .closecollapse {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: $primary-color;
+    padding: 0 15px 0 15px;
+    height: 52px;
+    border-radius: 5px;
+    & p {
+        color: $second-color;
+        font-size: 24px;
+        margin: 0;
+    }
 }
 
-.opencollapse {
+.btncollapse {
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle {
     background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 5px;
+    & p {
+        color: $primary-color;
+        font-size: 18px;
+        margin: 0;
+    }
 }

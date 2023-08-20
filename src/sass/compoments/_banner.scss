@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1240px;
+    margin: 0 auto 0 auto;
     & img {
         border-radius: 25px;
         width: 100%;
@@ -12,7 +14,7 @@
     }
     & h1 {
         position: absolute;
-        color: white;
+        color: $second-color;
         font-size: 48px;
     }
 }

@@ -1,9 +1,51 @@
 .sectionitemlog {
+    box-sizing: border-box;
+    max-width: 1240px;
     display: grid;
-    grid-template-columns: 340px 340px 340px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px 60px;
-    & article {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: 43px auto 50px auto;
+    padding: 56px 50px 43px 50px;
+    & a {
+        display: block;
         height: 340px;
-        background-color: aqua;
+        position: relative;
+        z-index: 4;
+        & h2 {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            margin: 0;
+            font-size: 18px;
+            color: $second-color;
+            z-index: 2;
+        }
+        & div {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 340px;
+                height: 340px;
+                left: 0;
+                border-radius: 10px;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)60%);
+                z-index: 1;
+            }
+            & img {
+                object-fit: cover;
+                position: relative;
+                width: 340px;
+                height: 340px;
+                border-radius: 10px;
+                z-index: -1;
+            }
+        }
     }
+    
+    
+    
+    
 }

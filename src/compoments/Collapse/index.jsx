@@ -11,7 +11,7 @@ function Collapse(props) {
         <article>
             <div className='closecollapse'>
                 <p>{props.titre}</p>
-                <button onClick={toggle}>
+                <button className='btncollapse' onClick={toggle}>
                     <img src={arrowtop} alt="Fléche haut" />
                 </button>
             </div>
