@@ -1,0 +1,58 @@
+.divinfo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 24px auto 0 auto;
+    color: $primary-color;
+}
+
+.h1info {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.locationinfo {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.divtag {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    & p {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        color: $second-color;
+        height: 25px;
+        padding: 0 22px 0 22px;
+        border-radius: 10px;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+.divhost {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 21px;
+    & p {
+        text-align: right;
+        margin: 0;
+    }
+    & img {
+        height: 64px;
+        border-radius: 50%;
+    }
+}
+
+.divcolinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 76px;
+    max-width: 1240px;
+    margin: 24px auto 50px auto;
+}

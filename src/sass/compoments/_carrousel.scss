@@ -1,20 +1,34 @@
 .divcarrousel {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    height: 415px;
+    margin: auto auto;
+}
+
+.imgcarrousel {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
 }
 
 .imgleft {
     position: absolute;
-    left: 0px;
+    left: 24px;
 }
 
 .imgright {
     position: absolute;
-    top: 0px;
-    right: 100px;
+    right: 24px;
 }
 
 .counter {
     position: absolute;
-    bottom: 0px;
-    left: 100px;
+    justify-content: center;
+    bottom: 25px;
+    color: $second-color;
+    font-size: 18px;
 }

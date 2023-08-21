@@ -7,19 +7,26 @@ function Infologement(props) {
 
     return (
         <section>
-            <div>
-                <h1>{logementitem.title}</h1>
-                <p>{logementitem.location}</p>
-                {logementitem.tags.map((tags, index) => (
-                    <p key={index}>{tags}</p>
-                ))}
-                <p>{logementitem.host.name}</p>
-                <img src={logementitem.host.picture} alt="Propriétaire" />
-                <Rating rating={logementitem.rating} />
-
+            <div className='divinfo'>
+                <div>
+                    <h1 className='h1info'>{logementitem.title}</h1>
+                    <p className='locationinfo'>{logementitem.location}</p>
+                    <div className='divtag'>
+                    {logementitem.tags.map((tags, index) => (
+                        <p key={index}>{tags}</p>
+                    ))}
+                    </div>
+                </div>
+                <div>
+                    <div className='divhost'>
+                        <p>{logementitem.host.name}</p>
+                        <img src={logementitem.host.picture} alt="Propriétaire" />
+                    </div>
+                    <Rating rating={logementitem.rating} />
+                </div>
             </div>
-            <div>
-                <Collapse titre="Description" content={logementitem.description} />
+            <div className='divcolinfo'>
+                <Collapse titre="Description" content={<p>{logementitem.description}</p>} />
                 <Collapse titre="Équipements" content={logementitem.equipments.map((equipement, index) => (
                     <p key={index}>{equipement}</p>
                 ))} />

@@ -18,7 +18,7 @@ function Carrousel(props) {
 
     return (
       <div className='divcarrousel'>
-        <img src={logementitem.pictures[count - 1]} alt = "Vue intérieur de l'appartement" />
+        <img className='imgcarrousel' src={logementitem.pictures[count - 1]} alt = "Vue intérieur de l'appartement" />
         <img className='imgleft' src={arrowleft} alt='Fléche gauche' onClick={() => sliderleft ()} />
         <img className='imgright' src={arrowright} alt='Fléche droite' onClick={() => slideright ()} />
         <p className='counter'>{count}/{lengarray}</p>

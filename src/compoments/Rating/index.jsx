@@ -5,7 +5,7 @@ function Rating(props) {
     const range = [1, 2, 3, 4,5]
 
     return (
-      <div>
+      <div className='divrating'>
         {range.map((rangeElem, index) =>
         props.rating >= rangeElem ? <img key={index} src={starred} alt="Note" /> : <img key={index} src={stargrey} alt="Note" />
         )}
