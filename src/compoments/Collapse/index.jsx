@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import arrowtop from '../../assets/arrow_top.svg'
 
 function Collapse(props) {
@@ -7,18 +7,20 @@ function Collapse(props) {
         setOpen(!open);
       };
 
+      const contentRef = useRef();
+      
+
     return (
-        <article>
+        <article className='articlecollapse'>
             <div className='closecollapse'>
                 <p>{props.titre}</p>
-                <button className='btncollapse' onClick={toggle}>
+                <button className={`btncollapse ${open ? "btncolopen" : "btncolclose"}`} onClick={toggle}>
                     <img src={arrowtop} alt="Fléche haut" />
                 </button>
             </div>
-            {open && (<div className='toggle'>
-                {props.content}
+            <div className="toggle-parent" ref={contentRef} style={open ? { height: contentRef.current.scrollHeight + "px" } : { height: "0px" }}>
+                <div className="toggle">{props.content}</div>
             </div>
-            )}    
         </article>
     )
   }

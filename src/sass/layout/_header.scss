@@ -4,15 +4,29 @@ header {
     align-items: center;
     max-width: 1240px;
     height: 68px;
-    margin: 45px auto 50px auto;
+    margin: 25px auto 23px auto;
+    padding: 20px 20px 27px 20px;
+    @include mobile {
+        margin: 0;
+        height: 47px;
+    }
     & img {
         height: 68px;
         width: 210px;
+        @include mobile {
+            height: 47px;
+            width: 145px;
+        }
     }
     & a {
         font-size: 24px;
         color: $primary-color;
         text-decoration: none;
+        font-weight: 500;
+        @include mobile {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
 }
 
@@ -22,4 +36,7 @@ header {
 
 .linkpropos {
     margin-left: 57px;
+    @include mobile {
+        margin-left: 26px;
+    }
 }

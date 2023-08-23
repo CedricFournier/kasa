@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 function Listelogement() {
 
-
     return (
         <section className='sectionitemlog'>
             {tablogement.map((logement) => (

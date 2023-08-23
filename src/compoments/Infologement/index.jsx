@@ -6,7 +6,7 @@ function Infologement(props) {
     const logementitem = tablogement.find((item) => item.id === props.id)
 
     return (
-        <section>
+        <section className='sectioninfolog'>
             <div className='divinfo'>
                 <div>
                     <h1 className='h1info'>{logementitem.title}</h1>
@@ -17,7 +17,7 @@ function Infologement(props) {
                     ))}
                     </div>
                 </div>
-                <div>
+                <div className='divrathost'>
                     <div className='divhost'>
                         <p>{logementitem.host.name}</p>
                         <img src={logementitem.host.picture} alt="Propriétaire" />

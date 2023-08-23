@@ -6,9 +6,7 @@ import tablogement from '../../datas/listelogement.json';
 function Logement() {
   const { id } = useParams()
   const logementitem = tablogement.find((item) => item.id === id)
-  console.log(logementitem)
   
-
   if (!logementitem) {
     return <Navigate to="/Error" />;
   } return ( 
