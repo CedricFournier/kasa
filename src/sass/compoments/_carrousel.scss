@@ -1,8 +1,6 @@
 .divcarrousel {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include item-center;
     max-width: 1240px;
     height: 415px;
     margin: auto auto;
@@ -24,12 +22,14 @@
 
 .imgleft {
     position: absolute;
-    left: 24px;
+    left: 44px;
+    cursor: pointer;
     @include tablette {
         width: 36px;
         height: 36px;
     }
     @include mobile {
+        left: 24px;
         width: 24px;
         height: 24px;
     }
@@ -37,12 +37,14 @@
 
 .imgright {
     position: absolute;
-    right: 24px;
+    right: 44px;
+    cursor: pointer;
     @include tablette {
         width: 36px;
         height: 36px;
     }
     @include mobile {
+        right: 24px;
         width: 24px;
         height: 24px;
     }

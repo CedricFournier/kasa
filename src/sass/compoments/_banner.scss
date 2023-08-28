@@ -1,8 +1,6 @@
 .divbanner {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include item-center;
     max-width: 1240px;
     margin: 0 auto 0 auto;
     padding: 0 20px 0 20px;
@@ -24,6 +22,8 @@
         position: absolute;
         color: $second-color;
         font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
         margin: 0 16px 0 16px;
         @include tablette {
             font-size: 36px;

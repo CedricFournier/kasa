@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1240px;
-    margin: 24px auto 0 auto;
+    margin: 30px auto 0 auto;
     color: $primary-color;
     @include mobile {
         flex-direction: column;
@@ -17,6 +17,7 @@
 .h1info {
     font-size: 36px;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     @include mobile {
         font-size: 18px;
@@ -26,10 +27,9 @@
 
 .locationinfo {
     font-size: 18px;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     @include mobile {
         font-size: 14px;
-        margin-top: 5px;
     }
 }
 
@@ -42,8 +42,7 @@
         flex-wrap: wrap;
     }
     & p {
-        display: flex;
-        align-items: center;
+        @include item-rowcenter;
         background-color: $primary-color;
         color: $second-color;
         height: 25px;
@@ -55,6 +54,7 @@
             font-size: 10px;
             height: 18px;
             padding: 0 15px 0 15px;
+            border-radius: 5px;
         }
     }
 }
@@ -71,8 +71,7 @@
 }
 
 .divhost {
-    display: flex;
-    align-items: center;
+    @include item-rowcenter;
     gap: 10px;
     margin-bottom: 21px;
     justify-content: flex-end;
@@ -82,7 +81,7 @@
     & p {
         text-align: right;
         margin: 0;
-        max-width: 50%;
+        width: 50%;
         @include mobile {
             font-size: 12px;
         }

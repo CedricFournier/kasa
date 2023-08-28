@@ -1,7 +1,5 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include item-colcenter;
     box-sizing: border-box;
     background-color: black;
     color: $second-color;
@@ -17,6 +15,7 @@ footer {
         font-size: 24px;
         font-weight: 500;
         @include mobile {
+            padding: 0 10px;
             font-size: 12px;
             text-align: center;
         }

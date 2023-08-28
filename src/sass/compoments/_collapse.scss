@@ -16,15 +16,17 @@
     justify-content: space-between;
     align-items: center;
     background-color: $primary-color;
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 15px;
     height: 52px;
     border-radius: 5px;
     @include mobile {
         height: 30px;
+        padding: 0 15px 0 10px;
     }
     & p {
         color: $second-color;
         font-size: 24px;
+        font-style: normal;
         margin: 0;
         @include mobile {
             font-size: 13px;
@@ -33,9 +35,7 @@
 }
 
 .btncollapse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include item-center;
     background-color: $primary-color;
     border: none;
     cursor: pointer;
@@ -72,13 +72,15 @@
     box-sizing: border-box;
     background-color: #F6F6F6;
     border-radius: 5px;
-    padding: 20px;
+    padding: 16px 20px 20px 20px;
     @include mobile {
         padding: 13px 20px 20px 20px;
     }
     & p {
         color: $primary-color;
         font-size: 18px;
+        font-style: normal;
+        line-height: 142%;
         margin: 0;
         @include mobile {
             font-size: 12px;
