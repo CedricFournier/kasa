@@ -9,12 +9,12 @@ import Error from './pages/Error';
 
 function App(){
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Logement/:id" element={<Logement />} />
-                <Route path="Propos" element={<Propos />} />
+                <Route path="/Propos" element={<Propos />} />
                 <Route path="/Error" element={<Error />} />
                 <Route path="*" element={<Error />} />
             </Routes>
